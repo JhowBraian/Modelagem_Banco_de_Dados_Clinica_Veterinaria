@@ -1,85 +1,121 @@
+# 📘 **Projeto Livraria Saber — Scripts SQL**
 
-````markdown
-# Projeto Arena Legends – Scripts SQL
+Este repositório contém os arquivos SQL desenvolvidos para a disciplina **Modelagem e Manipulação de Dados**, utilizando MySQL, com objetivo de criar, popular e consultar um banco de dados completo baseado no mini-mundo de uma **livraria e papelaria**.
+Inclui comandos de criação de tabelas, inserção de dados, consultas, atualizações e exclusões.
 
-Este repositório contém os arquivos SQL desenvolvidos para a Experiência Prática de Modelagem e Manipulação de Dados, utilizando MySQL como sistema gerenciador de banco de dados. O projeto implementa a criação, povoamento e manipulação de dados de um sistema de gestão para um jogo online competitivo (MOBA).
+---
 
-## Estrutura do Repositório
+## 📁 **Estrutura do Repositório**
 
-```text
-Projeto ArenaLegends
-├── 📂 01_create_tables.sql ...... Criação das tabelas
-├── 📂 02_insert_data.sql ........ Inserts de dados
-├── 📂 03_select_queries.sql ..... Consultas SQL
-├── 📂 04_update_delete.sql ...... Updates e Deletes
-└── 💾 arenalegends.sql .......... Backup completo do banco
-````
+```
+├── 01_create_tables.sql      -> Criação das tabelas
+├── 02_insert.sql             -> Inserção dos dados
+├── 03_select.sql             -> Consultas SELECT
+├── 04_update_delete.sql      -> Comandos UPDATE e DELETE
+└── README.md                 -> Documentação geral
+```
 
-## Descrição dos Arquivos
+---
 
-### 01\_create\_tables.sql
+## 🗂️ **Descrição dos Arquivos**
 
-Contém os comandos SQL responsáveis pela criação das tabelas do banco de dados `arena_legends`. Inclui definição de campos, tipos de dados, chaves primárias e estrangeiras.
+### **01_create_tables.sql**
 
-### 02\_insert\_data.sql
+Contém os comandos SQL responsáveis pela criação de todas as tabelas do banco de dados **Livraria Saber**.
+Inclui definição de chaves primárias, estrangeiras, relacionamentos e tipos de dados.
 
-Script de inserção de dados iniciais nas tabelas:
+---
 
-  * **Jogador**
-  * **Personagem (Herói)**
-  * **Item (Skin/Equipamento)**
-  * **Partida**
-  * **Guilda**
+### **02_insert.sql**
 
-Esses dados são utilizados para testes e validação das consultas.
+Script responsável pela população inicial das tabelas:
 
-### 03\_select\_queries.sql
+* Cliente
+* Vendedor
+* Fornecedor
+* Autor
+* Editora
+* Livro
+* Papelaria
+* Livro_Autor (tabela de relacionamento N:N)
+* Venda
+* Item_Venda
+
+Os dados foram criados de forma coerente com o mini-mundo proposto.
+
+---
+
+### **03_select.sql**
 
 Contém diversas consultas SQL utilizando:
 
-  * WHERE
-  * ORDER BY
-  * JOIN
-  * GROUP BY
+* `WHERE`
+* `LIKE`
+* `ORDER BY`
+* `JOIN`
+* `GROUP BY`
+* `LIMIT`
 
-Demonstra domínio da DML para recuperação e manipulação de dados (ex: Ranking de jogadores, histórico de partidas).
+As consultas permitem visualizar de forma clara clientes, vendas, livros, itens de venda, produtos de papelaria, autores e editoras.
 
-### 04\_update\_delete.sql
+---
 
-Inclui comandos de:
+### **04_update_delete.sql**
 
-  * **UPDATE** (três atualizações específicas, ex: alteração de saldo ou nível)
-  * **DELETE** (três exclusões controladas)
+Inclui comandos:
 
-Todos os comandos respeitam a integridade referencial do banco.
+* `UPDATE` (edição e correção de registros)
+* `DELETE` (remoção segura de dados com condições)
 
-### arenalegends.sql
+Todos os comandos respeitam as restrições de integridade referencial do banco.
 
-Arquivo completo gerado pelo MySQL Workbench contendo:
+---
 
-  * Estrutura do banco
-  * Dados já inseridos
-  * Modificações e operações realizadas
+## 🛠️ **dump_livraria.sql** (Opcional)
 
-Serve como backup completo e pode ser utilizado para restaurar o projeto em outro ambiente.
+Caso exista, este arquivo contém o **backup completo** gerado pelo MySQL Workbench, permitindo recriar todo o banco em outro ambiente.
 
-## Tecnologias Utilizadas
+---
 
-  * MySQL Server
-  * MySQL Workbench
-  * VS Code
-  * GitHub
+## 💻 **Tecnologias Utilizadas**
 
-## Como Executar os Arquivos
+* **MySQL Server**
+* **MySQL Workbench**
+* **VS Code**
+* **Git & GitHub**
 
-### 1\. Criar o Banco de Dados
+---
 
-No MySQL Workbench ou terminal:
+## ▶️ **Como Executar os Arquivos**
+
+### **1. Criar o Banco de Dados**
+
+No MySQL Workbench:
 
 ```sql
-CREATE DATABASE arena_legends;
-USE arena_legends;
+CREATE DATABASE livraria_saber;
+USE livraria_saber;
 ```
 
-```
-```
+### **2. Executar na Ordem Correta**
+
+1️⃣ Rodar **01_create_tables.sql**
+2️⃣ Rodar **02_insert.sql**
+3️⃣ Rodar **03_select.sql** (para testar consultas)
+4️⃣ Rodar **04_update_delete.sql** (opcional)
+
+---
+
+## ✔️ **Status do Projeto**
+
+Projeto concluído com sucesso e pronto para avaliação acadêmica.
+
+---
+
+Se quiser, posso gerar também:
+
+* capa para o repositório,
+* instruções no estilo da sua faculdade,
+* ou transformar este README em Markdown avançado.
+
+Só me pedir!
