@@ -97,25 +97,3 @@ CREATE DATABASE livraria_saber;
 USE livraria_saber;
 ```
 
-### **2. Executar na Ordem Correta**
-
-1️⃣ Rodar **01_create_tables.sql**
-2️⃣ Rodar **02_insert.sql**
-3️⃣ Rodar **03_select.sql** (para testar consultas)
-4️⃣ Rodar **04_update_delete.sql** (opcional)
-
----
-
-## ✔️ **Status do Projeto**
-
-Projeto concluído com sucesso e pronto para avaliação acadêmica.
-
----
-
-Se quiser, posso gerar também:
-
-* capa para o repositório,
-* instruções no estilo da sua faculdade,
-* ou transformar este README em Markdown avançado.
-
-Só me pedir!
